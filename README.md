@@ -5,10 +5,10 @@
 
 ES6 JS/HTML binding library for creating dynamic web applications through HTML attribute binding. Made up of 4 libraries, puled in via a parent package that pulls in all required parts and configures as importable ES6 module 'RaziloBind'.
 
-* **[https://github.com/smiffy6969/razilobind-core](razilobind-core)** *(the main part)*, to traverse, detect and observe.
-* **[https://github.com/smiffy6969/razilobind-binder](razilobind-binder) [injectables]** *(the actual binders)*, binding object properties to elements to do various things.
-* **[https://github.com/smiffy6969/razilobind-resolver](razilobind-resolver) [injectables]** *(to parse attribute data)*, resolving attribute data to things like strings, numbers, objects, methods etc.
-* **[https://github.com/smiffy6969/razilobind-alterer](razilobind-alterer) [injectables]** *(to change things)*, altering resolved data to something else without affecting the model.
+* **[razilobind-core](https://github.com/smiffy6969/razilobind-core)** *(the main part)*, to traverse, detect and observe.
+* **[razilobind-binder](https://github.com/smiffy6969/razilobind-binder) [injectables]** *(the actual binders)*, binding object properties to elements to do various things.
+* **[razilobind-resolver](https://github.com/smiffy6969/razilobind-resolver) [injectables]** *(to parse attribute data)*, resolving attribute data to things like strings, numbers, objects, methods etc.
+* **[razilobind-alterer](https://github.com/smiffy6969/razilobind-alterer) [injectables]** *(to change things)*, altering resolved data to something else without affecting the model.
 
 This package **razilobind-alterer**, is injectable functionality that alters bound, resolved data before applying the data in the binded fashion. Think of it like formatting a timestamp to a date string, or inverting a property value.
 
@@ -20,7 +20,7 @@ Alterers are a way to change the end result of bound data that has been resolved
 
 Alterers change the resolved data before using it in the binded element in the fashion it was intended to be used, such as trimming whitespace on strings, or formtatting dates. Substitue ??? for the binder you wish to alter the data on `alter-*=""`, such as alter-text, alter-show... with the alterer/s specified in attribute value such as
 
-Alterers are linked to the binder you wish to change, and they take in any resolvable data, [https://github.com/smiffy6969/razilobind-resolver](see here for what types of resolvable data can be used).
+Alterers are linked to the binder you wish to change, and they take in any resolvable data, [see here for what types of resolvable data can be used](https://github.com/smiffy6969/razilobind-resolver).
 
 
 ```html
