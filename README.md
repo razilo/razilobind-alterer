@@ -138,6 +138,32 @@ Format various data types to a date string in a specified format. Ported from da
 ```
 
 
+### equal *Return boolean if equal to*
+
+Checks if the bound resolved data is equal to option alterer value.
+
+* **Accepts Type** All resolved types
+* **Options** mixed
+* **returns** boolean
+
+```html
+<span bind-show="foo.bar" alter-text="{'equal': foo.bar2}"></span>
+```
+
+
+### identical *Return boolean if identical to*
+
+Checks if the bound resolved data is identical (in value and type) to option alterer value.
+
+* **Accepts Type** All resolved types
+* **Options** mixed
+* **returns** boolean
+
+```html
+<span bind-show="foo.bar" alter-text="{'identical': foo.bar2}"></span>
+```
+
+
 ## Making your own Alterers
 
 
