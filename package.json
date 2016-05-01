@@ -1,6 +1,6 @@
 {
 	"name": "razilobind-alterer",
-	"version": "1.0.1",
+	"version": "1.0.3",
     "description": "Alterers for ES6 JS/HTML binding library for creating cynamic web applications through HTML attribtue binding",
 	"author": "Paul Smith (smiffy6969)",
 	"homepage": "http://bind.razilo.net",
