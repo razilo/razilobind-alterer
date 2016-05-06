@@ -96,19 +96,6 @@ Add a string to the end of a string, such as .com to a TLD name.
 ```
 
 
-### not *Boolean inversion of data*
-
-Return a boolean inversion of the resolved data.
-
-* **Accepts Type** all 'typeof' data types
-* **Options** none
-* **returns** boolean
-
-```html
-<span bind-show="foo" alter-show="not"></span>
-```
-
-
 ### join *Catenate strings into string*
 
 Catenate strings together into a single string.
@@ -135,6 +122,19 @@ Format various data types to a date string in a specified format. Ported from da
 <span bind-text="'1988/10/10'" alter-text="{'date': 'mmmm d, yyyy'}"></span>
 <span bind-text="something.date" alter-text="{'date': 'yyyy-mm-dd'T'HH:MM:ss'}"></span>
 <span bind-text="1234567890" alter-text="{'date': 'isoUtcDateTime'}"></span>
+```
+
+
+### not *Boolean inversion of data*
+
+Return a boolean inversion of the resolved data.
+
+* **Accepts Type** all 'typeof' data types
+* **Options** none
+* **returns** boolean
+
+```html
+<span bind-show="foo" alter-show="not"></span>
 ```
 
 
